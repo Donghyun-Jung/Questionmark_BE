@@ -12,8 +12,8 @@ import java.util.Collection;
 
 @RequiredArgsConstructor
 @Getter
-
 public class CustomUserDetails implements UserDetails {
+
     private final User user;
 
     @Override
@@ -53,4 +53,3 @@ public class CustomUserDetails implements UserDetails {
         return true;
     }
 }
-
