@@ -1,6 +1,6 @@
 package com.example.duel.user;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 
 public class UserRequest {
 

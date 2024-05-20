@@ -3,7 +3,7 @@ package com.example.duel._core.utils;
 import com.example.duel._core.errors.CustomException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class FilterResponseUtils {
