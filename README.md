@@ -1,4 +1,10 @@
+## 동국대학교 개발자 학습환경 플랫폼
 # DUEL (Dongguk University E-Learning Laboratory)
+
+## BE 리포지토리
+
+백엔드 코드는 다음 GitHub 레포지토리에서 관리됩니다:
+[BE 리포지토리 바로가기](https://github.com/CSID-DGU/2024-1-OSSProj-Questionmark-07-BE.git)
 
 ## 팀 구성원
 
@@ -56,7 +62,42 @@
 - **개발 학습 로드맵 제공 및 커뮤니티 조성**.
 - **통합 개발 학습 환경 제공을 통한 효율적인 학습 경험**.
 
+
+## 이용 방법 (유저 플로우)
+
+프로젝트의 유저 플로우는 아래 이미지를 통해 확인할 수 있습니다:
+![DUEL 학습 방법](https://github.com/CSID-DGU/2024-1-OSSProj-Questionmark-07/assets/144092849/0d0f86e2-11d7-4a1d-8b6e-09691c534ba2)
+
 ## 개발 환경
 
 - **Backend**: MySQL, MariaDB, NGINX, Redis, Junit 5, Spring Boot, Docker, Kubernetes, Gradle.
 - **Frontend**: TypeScript, React, Next.js, React Query, Storybook.
+
+
+# 추가 자료
+
+## API 명세서
+
+API에 대한 상세한 명세는 다음 링크에서 확인할 수 있습니다:
+[API 명세서 바로가기](https://www.notion.so/API-53fd633284584fe9aa59e7d7e1658625?pvs=21)
+
+
+## 프로젝트 관리
+
+- **범위 일정 관리**: 
+  [범위 일정 관리 바로가기](https://foregoing-education-610.notion.site/8e367ee8cd234c0a98314418e41001aa?pvs=4)
+
+- **이슈 관리**: 
+  [이슈 관리 바로가기](https://foregoing-education-610.notion.site/408c4b08259647abb722e4183eac5b4c?pvs=4)
+
+- **회의록**: 
+  [회의록 바로가기](https://foregoing-education-610.notion.site/52e53cda8ea042e6a223c7d14a239f84?v=8b8435fa506c427ba3a5bbd11d085d86&pvs=4)
+
+## 보고서 및 발표 자료
+
+- **중간보고서**: 
+  [중간보고서 바로보기](https://github.com/CSID-DGU/2024-1-OSSProj-Questionmark-07/blob/main/Docs/2_1_OSSProj_7_Questionmark_%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C_.md)
+
+- **중간발표자료**: 
+  [중간발표자료 바로보기](https://github.com/CSID-DGU/2024-1-OSSProj-Questionmark-07/blob/main/Docs/2_2_OSSProj_7_Questionmark_%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C_.md)
+
