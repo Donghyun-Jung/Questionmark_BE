@@ -23,6 +23,7 @@ public class S3Config {
     private String region;
 
     private final static String proxyHost = "";
+    // 프록시 서버의 호스트 주소받고 추가 예정 
 
     private final static int proxyPort = 3128;
 

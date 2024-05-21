@@ -109,14 +109,14 @@ public class DuelApplication {
 					newIndividualStep(Roadmap.builder().roadmapId(1L).build(), "인증된 사용자 권한 부족 예외처리"),
 					newIndividualStep(Roadmap.builder().roadmapId(1L).build(), "소셜 로그인 사용하기"),
 
-					newGroupStep(Roadmap.builder().roadmapId(12L).build(), "다형성(Polymorphism)", "Day1", LocalDateTime.of(2023, 10, 1, 23, 59)),
-					newGroupStep(Roadmap.builder().roadmapId(12L).build(), "람다식(lambda expression)", "Day2", LocalDateTime.of(2023, 12, 3, 23, 59)),
-					newGroupStep(Roadmap.builder().roadmapId(12L).build(), "스트림(lambda expression)", "Day3", LocalDateTime.of(2023, 10, 5, 23, 59)),
+					newGroupStep(Roadmap.builder().roadmapId(12L).build(), "다형성(Polymorphism)", "Day1", LocalDateTime.of(2024, 10, 1, 23, 59)),
+					newGroupStep(Roadmap.builder().roadmapId(12L).build(), "람다식(lambda expression)", "Day2", LocalDateTime.of(2024, 12, 3, 23, 59)),
+					newGroupStep(Roadmap.builder().roadmapId(12L).build(), "스트림(lambda expression)", "Day3", LocalDateTime.of(2024, 10, 5, 23, 59)),
 
 
-					newGroupStep(Roadmap.builder().roadmapId(5L).build(), "spring boot 1일차", "Day1", LocalDateTime.of(2023, 10, 1, 23, 59)),
-					newGroupStep(Roadmap.builder().roadmapId(5L).build(), "spring boot 2일차", "Day2", LocalDateTime.of(2023, 10, 3, 23, 59)),
-					newGroupStep(Roadmap.builder().roadmapId(5L).build(), "spring boot 3일차", "Day3", LocalDateTime.of(2023, 10, 5, 23, 59)),
+					newGroupStep(Roadmap.builder().roadmapId(5L).build(), "spring boot 1일차", "Day1", LocalDateTime.of(2024, 10, 1, 23, 59)),
+					newGroupStep(Roadmap.builder().roadmapId(5L).build(), "spring boot 2일차", "Day2", LocalDateTime.of(2024, 10, 3, 23, 59)),
+					newGroupStep(Roadmap.builder().roadmapId(5L).build(), "spring boot 3일차", "Day3", LocalDateTime.of(2024, 10, 5, 23, 59)),
 					newIndividualStep(Roadmap.builder().roadmapId(1L).build(), "예외처리 마스터")
 			));
 			userStepRepository.saveAll(Arrays.asList(
@@ -143,8 +143,8 @@ public class DuelApplication {
 					newIndividualTil(Roadmap.builder().roadmapId(1L).build(), Step.builder().stepId(3L).build(), User.builder().userId(1L).build(), "인증된 사용자 권한 부족 예외처리", "이것은 내용입니다.", true, null),
 					newIndividualTil(Roadmap.builder().roadmapId(1L).build(), Step.builder().stepId(4L).build(), User.builder().userId(1L).build(), "소셜 로그인 사용하기", "이것은 내용입니다.", true, null),
 
-					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(5L).build(), User.builder().userId(1L).build(), "다형성(Polymorphism)", "이것은 내용입니다1.", "이것은 제출할 내용입니다.", LocalDateTime.of(2023, Month.OCTOBER, 10, 1, 0, 0), 1, false),
-					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(5L).build(), User.builder().userId(2L).build(), "람다식(lambda expression)", "이것은 내용입니다2.", "이것은 제출할 내용입니다.", LocalDateTime.of(2023, Month.OCTOBER, 10, 2, 0, 0), 2, false),
+					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(5L).build(), User.builder().userId(1L).build(), "다형성(Polymorphism)", "이것은 내용입니다1.", "이것은 제출할 내용입니다.", LocalDateTime.of(2024, Month.OCTOBER, 10, 1, 0, 0), 1, false),
+					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(5L).build(), User.builder().userId(2L).build(), "람다식(lambda expression)", "이것은 내용입니다2.", "이것은 제출할 내용입니다.", LocalDateTime.of(2024, Month.OCTOBER, 10, 2, 0, 0), 2, false),
 					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(6L).build(), User.builder().userId(1L).build(), "스트림(lambda expression)", "이것은 내용입니다3.", "이것은 제출할 내용입니다.", null, 3, false),
 					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(6L).build(), User.builder().userId(2L).build(), "다형성2(Polymorphism)", "이것은 내용입니다4.", "이것은 제출할 내용입니다.", null, 4, false),
 					newGroupTil(Roadmap.builder().roadmapId(12L).build(), Step.builder().stepId(6L).build(), User.builder().userId(5L).build(), "TIL!!", "이것은 내용입니다5.", null, null, 0, false)

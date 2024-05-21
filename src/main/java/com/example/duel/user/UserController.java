@@ -90,4 +90,39 @@ public class UserController {
 
         return ResponseEntity.ok().body(responseDTO);
     }
+
+    
+    // 사용자 정보 수정하기
+    @PatchMapping("/users")
+    public ResponseEntity<?> updateUser(@RequestBody @Valid UserRequest.UpdateUserDTO requestDTO, Errors errors,
+                                        @AuthenticationPrincipal CustomUserDetails userDetails) {
+        userService.updatePassword(requestDTO, userDetails.getUser().getId()); // 비밀번호 수정
+
+        return ResponseEntity.ok().body(ApiUtils.success(HttpStatus.OK, null));
+    }
+
+    // 사용자 장미밭 조회하기
+    @GetMapping("/gardens")
+    public ResponseEntity<?> gardens(@AuthenticationPrincipal CustomUserDetails userDetails) {
+        UserResponse.ViewGardensDTO responseDTO = userService.viewGardens(userDetails.getUser());
+
+        return ResponseEntity.ok().body(ApiUtils.success(HttpStatus.OK, responseDTO));
+    }
+
+    // 회원 탈퇴하기
+    @DeleteMapping("/users")
+    public ResponseEntity<?> withdrawMembership(@AuthenticationPrincipal CustomUserDetails userDetails){
+        userService.withdrawMembership(userDetails.getUser());
+
+        return ResponseEntity.ok().body(ApiUtils.success(HttpStatus.OK, null));
+    }
+
+    public ResponseCookie setRefreshTokenCookie(String refreshToken) {
+        return ResponseCookie.from("refreshToken", refreshToken)
+                .httpOnly(true)
+                .secure(true)
+                .sameSite("None")
+                .maxAge(JWTProvider.REFRESH_EXP)
+                .build();
+    }
 }
